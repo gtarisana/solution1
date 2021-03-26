@@ -1,0 +1,25 @@
+ALGORITHM solution1
+VAR
+tab1, tab2: array_of_intger;
+sum,i,j, n: INTEGER;
+
+BEGIN
+sum=0;
+
+FOR i from 0 to tab1.length -1 step 1 do
+FOR j from 0 to tab2.length -1 step 1 do
+ IF tab1[i] <> tab2 [j] THEN
+ sum = sum+ tab1[i];
+ END_IF
+ END FOR
+ END FOR 
+
+FOR j from 0 to tab1.length -1 step 1 do
+FOR i from 0 to tab2.length -1 step 1 do
+ IF tab1[j] <> tab2 [i] THEN
+ sum = sum+ tab1[j];
+ END_IF
+ END FOR
+ END FOR 
+
+END
